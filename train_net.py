@@ -30,6 +30,7 @@ from detectron2.config import get_cfg
 from detectron2.data import MetadataCatalog, build_detection_train_loader
 from detectron2.engine import (
     DefaultTrainer,
+    BestCheckpointer,
     default_argument_parser,
     default_setup,
     launch,
@@ -279,6 +280,9 @@ def main(args):
 
     trainer = Trainer(cfg)
     trainer.resume_or_load(resume=args.resume)
+    trainer.register_hooks(
+        [BestCheckpointer(cfg.SOLVER.CHECKPOINT_PERIOD, trainer.checkpointer, "sem_seg/mIoU")]
+    )
     return trainer.train()
 
 
