@@ -18,9 +18,9 @@ DATASETS:
   TRAIN: ("lip_semseg_train",)
   TEST: ("lip_semseg_val",)
 SOLVER:
-  IMS_PER_BATCH: 64
-  BASE_LR: 0.0008
-  MAX_ITER: 72000 # ~ 150 epoch
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.0002
+  MAX_ITER: 288000 # ~ 150 epoch
   WARMUP_FACTOR: 0.000001
   WARMUP_ITERS: 1500
   WEIGHT_DECAY: 0.05
