@@ -7,6 +7,6 @@
 #export GLOO_SOCKET_IFNAME=eth0
 python train_net.py \
 	--dist-url tcp://127.0.0.1:$(( RANDOM % 1000 + 20100 )) \
-	--num-gpus 8 \
+	--num-gpus 1 \
 	--config configs/lip/m2fp_R101_bs64_72k.yaml \
 	OUTPUT_DIR training_dir/lip \
