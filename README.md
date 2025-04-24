@@ -8,7 +8,7 @@
 \* Equal Contribution
 
 ## *New
-We have preprocessed nvidia dataset and custom dataset which can be found [here](https://drive.google.com/drive/folders/1xJaFS_3027crk7u36cue7BseAX80abRe?usp=sharing). We used [MegaSaM](https://mega-sam.github.io/) to get cameras and depths for custom dataset.
+We have preprocessed nvidia dataset and custom dataset which can be found [here](https://drive.google.com/drive/folders/1xzn-Mu_jyr-JTsrERRU-Mh2hQ-NWdfv8). We used [MegaSaM](https://mega-sam.github.io/) to get cameras and depths for custom dataset.
 ### Training
 To train nvidia dataset
 ```
