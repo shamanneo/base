@@ -7,6 +7,8 @@
 
 \* Equal Contribution
 
+ICCV 2025 (Highlight)
+
 ## *New
 We have preprocessed nvidia dataset and custom dataset which can be found [here](https://drive.google.com/drive/folders/1xzn-Mu_jyr-JTsrERRU-Mh2hQ-NWdfv8). We used [MegaSaM](https://mega-sam.github.io/) to get cameras and depths for custom dataset.
 ### Training
@@ -95,7 +97,7 @@ PYTHONPATH='.' python scripts/evaluate_iphone.py \
 @inproceedings{som2024,
   title     = {Shape of Motion: 4D Reconstruction from a Single Video},
   author    = {Wang, Qianqian and Ye, Vickie and Gao, Hang and Zeng, Weijia and Austin, Jake and Li, Zhengqi and Kanazawa, Angjoo},
-  journal   = {arXiv preprint arXiv:2407.13764},
-  year      = {2024}
+  booktitle   = {International Conference on Computer Vision (ICCV)},
+  year      = {2025}
 }
 ```
