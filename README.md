@@ -1,4 +1,4 @@
-# Shape of Motion: 4D Reconstruction from a Single Video
+# Shape of Motion: 4D Reconstruction from a Single Video ICCV 2025 (Highlight)
 **[Project Page](https://shape-of-motion.github.io/) | [Arxiv](https://arxiv.org/abs/2407.13764)**
 
 [Qianqian Wang](https://qianqianwang68.github.io/)<sup>1,2</sup>*, [Vickie Ye](https://people.eecs.berkeley.edu/~vye/)<sup>1</sup>\*, [Hang Gao](https://hangg7.com/)<sup>1</sup>\*, [Weijia Zeng](https://fantasticoven2.github.io/)<sup>1</sup>\*, [Jake Austin](https://www.linkedin.com/in/jakeaustin4701)<sup>1</sup>, [Zhengqi Li](https://zhengqili.github.io/)<sup>2</sup>, [Angjoo Kanazawa](https://people.eecs.berkeley.edu/~kanazawa/)<sup>1</sup>
@@ -6,8 +6,6 @@
 <sup>1</sup>UC Berkeley   &nbsp;  <sup>2</sup>Google Research
 
 \* Equal Contribution
-
-ICCV 2025 (Highlight)
 
 ## *New
 We have preprocessed nvidia dataset and custom dataset which can be found [here](https://drive.google.com/drive/folders/1xzn-Mu_jyr-JTsrERRU-Mh2hQ-NWdfv8). We used [MegaSaM](https://mega-sam.github.io/) to get cameras and depths for custom dataset.
