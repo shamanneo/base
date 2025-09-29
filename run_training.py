@@ -77,10 +77,13 @@ class TrainConfig:
     validate_every: int = 50
     save_videos_every: int = 50
     use_2dgs: bool = False
+    use_backup_code: bool = False
 
 
 def main(cfg: TrainConfig):
-    backup_code(cfg.work_dir)
+    if cfg.use_backup_code:
+        backup_code(cfg.work_dir)
+        
     train_dataset, train_video_view, val_img_dataset, val_kpt_dataset = (
         get_train_val_datasets(cfg.data, load_val=True)
     )
