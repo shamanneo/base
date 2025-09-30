@@ -436,12 +436,19 @@ if __name__ == "__main__":
             mssim_all.append(mssim)
             mlpips_all.append(mlpips)
 
-    print(f"mean 3D tracking EPE: {np.mean(epe_all):.4f}")
-    print(f"mean 3D tracking PCK (10cm): {np.mean(pck_3d_10cm_all):.4f}")
-    print(f"mean 3D tracking PCK (5cm): {np.mean(pck_3d_5cm_all):.4f}")
-    print(f"mean 2D tracking AJ: {np.mean(AJ_all):.4f}")
-    print(f"mean 2D tracking avg PCK: {np.mean(APCK_all):.4f}")
-    print(f"mean 2D tracking occlusion accuracy: {np.mean(occ_acc_all):.4f}")
-    print(f"mean NV mPSNR: {np.mean(mpsnr_all):.4f}")
-    print(f"mean NV mSSIM: {np.mean(mssim_all):.4f}")
-    print(f"mean NV mLPIPS: {np.mean(mlpips_all):.4f}")
+        results = {
+            "mean_3D_tracking_EPE": np.mean(epe_all),
+            "mean_3D_tracking_PCK_10cm": np.mean(pck_3d_10cm_all),
+            "mean_3D_tracking_PCK_5cm": np.mean(pck_3d_5cm_all),
+            "mean_2D_tracking_AJ": np.mean(AJ_all),
+            "mean_2D_tracking_avg_PCK": np.mean(APCK_all),
+            "mean_2D_tracking_occlusion_accuracy": np.mean(occ_acc_all),
+            "mean_NV_mPSNR": np.mean(mpsnr_all),
+            "mean_NV_mSSIM": np.mean(mssim_all),
+            "mean_NV_mLPIPS": np.mean(mlpips_all)
+        }
+
+        save_path = osp.join(args.result_dir, "quantitative.json")
+        with open(save_path, 'w') as f:
+            json.dump(results, f, indent=4) 
+            print(f"{save_path}")
