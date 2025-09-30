@@ -12,3 +12,7 @@ results/
 
 preproc/checkpoints
 preproc/checkpoints/
+
+output/
+
+command.sh
